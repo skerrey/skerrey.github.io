@@ -1,0 +1,106 @@
+/* Seth Kerrey
+    assignment7.css
+    INFO 1316 
+    Olberding
+    1/24/2021
+*/
+
+body{
+    min-height: 100vh;
+    margin: auto;
+    background-image: url('img/background3.png');
+    background-repeat: repeat;
+}
+header{
+    height: 80px;
+    background-image: url('img/logo5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 20px;
+}
+
+/* Nav */
+nav{
+    width: 680px;
+    margin: auto;
+    font-size: 1.7em;
+}
+nav ul{
+    list-style-type: none;    
+}
+nav li{
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+nav li a{
+    display: block;
+    text-decoration: none;
+    color: #bc22ff;
+}
+.nav_color a{
+    color: #8dd7ff;
+}
+nav li a:visited{
+    color: #bc22ff;
+}
+.nav_color a:visited{
+    color: #8dd7ff;
+}
+nav li a:hover{
+    background-color: grey;
+    border-radius: 5px;
+}
+nav li a:active, .nav_color a:active{
+    color: red;
+}
+
+/* Content */
+main{
+    clear: left;
+    margin: auto;
+    width: 680px;
+    padding: 0px 25px 25px 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+table{
+    display: block;
+    float: left;
+}
+
+/* Fieldset */
+#type{
+    max-width: 200px;
+    display: block;
+    clear: left;
+}
+#discount{
+    max-width: 450px;
+}
+
+/* Footer */
+footer{
+    color: white;
+    padding-top: 25px;
+    text-align: center;
+}
+footer a{
+    color: #3af246;
+}
+
+/* Button */
+#submit, #reset{
+    background-color: #bbb;
+    padding: .5em;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    border: none;
+}
+#submit:hover, #reset:hover{
+     border: none;
+     background: green;
+     box-shadow: 0px 0px 1px #777;
+}

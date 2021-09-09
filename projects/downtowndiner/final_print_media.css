@@ -1,0 +1,57 @@
+/*
+	Seth Kerrey
+	final_print_media.css
+	INFO 1311 WW
+	Olberding
+	05/17/2020
+*/
+nav{display: none;}
+.navbar{display:none;}
+#wrapper{margin-left: 40px; 
+		margin-right: 40px;
+		background-color: white;
+		color: black;}
+header{background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+main{margin: 75px;}
+/* Nav */
+.navbar{width: 100%;
+	background-color: teal;
+	overflow: auto;
+	font-weight: bold;}	
+.navbar a{text-align: center;
+	float: left;
+	display: block;
+	width: 25%;
+	font-size: 1.5em;
+	color: white;}
+.navbar a:link{text-decoration: none;}
+.navbar a:visited{text-decoration: none;}
+.navbar a:hover{background: white; color: teal;}
+/* Footer */
+footer{text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid teal;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	font-size: 1.2em;
+	clear: left;}
+.footer a{color: black;}
+.footer a:link{text-decoration: none;}
+.footer a:visited{text-decoration: none;}
+.footer a:hover{background: white; color: blue; text-decoration: underline;}
+.copyright{font-style: italic; font-size: .7em; text-shadow: 0px .5px black;}
+/* specials.html */
+.specials{font-size: 1.17em;
+	font-weight: bolder; 
+	float: left; 
+	text-align: center;
+	display: block;}
+.video{display: none;}
+/* final.html (Home) */
+.img{margin: auto; float: left;}

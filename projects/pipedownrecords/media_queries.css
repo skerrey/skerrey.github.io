@@ -1,0 +1,97 @@
+/* Seth Kerrey
+    media_queries.css
+    INFO 1316 
+    Olberding
+    2/21/2021
+*/
+
+/* Media Queries */
+
+/* Screens */
+    @media only screen and (max-width: 1675px){
+        #main{
+            width: 100%;
+        }
+        #img{
+            padding-left: 0;
+            padding-top: 20px;
+            clear: right;
+        }
+    }
+    @media only screen and (max-width: 1070px){
+        .responsive{
+            width: 100%;
+            height: auto;
+        }
+        body{
+            margin: 20px 35px 50px 35px;
+        }
+        .sidenav{
+            left: 45px;
+        }
+        .subHeader{
+            font-size: 1.7em;
+            margin-top: 160px;
+        }
+        
+    }
+    @media only screen and (max-width: 903px){
+        .responsive2{
+            width: 100%;
+            height: auto;
+        }
+        .sidenav{
+            display: none;
+        }
+        main{
+
+            padding: 20px 10px;
+        }
+        body{
+            margin: 0px;
+        }
+    }
+    @media only screen and (max-width: 874px){
+        .subHeader{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 684px){
+        .responsive3{
+            width: 100%;
+            height: auto;
+        }
+        .text_center{
+            text-align: left;
+        }
+        .padding_right{
+            padding-right: 0px;
+        }
+    }
+    @media only screen and (max-width: 663px){
+        
+    }
+    
+    
+/* Cellphone */
+    @media only screen and (max-width: 767px) {
+        
+    }
+
+
+/* Print */
+    @media print { 
+        .sidenav, nav, .footer, header{ 
+            display: none !important; 
+        } 
+        footer{
+            background-color: white;
+        }
+        #copyright{
+            color: black;
+        }
+        .hidden{
+            display: unset;
+        }
+    }
+    

@@ -1,0 +1,106 @@
+/* Seth Kerrey
+	assignment4.css
+	INFO 1316 
+	Olberding
+	1/10/2021
+*/
+
+/* Body */
+body{
+    margin: 25px 50px;
+    background-image: url('img/background_grass_opt.jpg');
+    /* Credit: Photo by Gravitylicious.com from Pexels */
+    background-repeat: repeat;
+}
+
+/* Header */
+header{
+    height: 100px;
+    background-image: url('img/logo.png'), url('img/banner_background.png'), linear-gradient(#9bfff5, #ffb29b);
+    /* Credit: grass icon made by Darius Dan from Flaticon 
+     * Credit: sun icon made by Good Ware from Flaticon
+     * */
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+
+/* Nav */
+nav{
+    height: 51px;
+    background-color: #cc6e4e;
+    font-size: 1.5em;
+    border-right: 1px solid black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    float: left;
+    display: block;
+    background-color: #cc6e4e;
+    padding: 12px 25px;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+}
+nav li a{
+    text-decoration: none;
+    transition: color 1s;
+}
+nav li a:link{
+    color: #002316;
+}
+nav li a:visited{
+    color: #002316;
+}
+nav li a:hover{
+    color: #ffb29b;
+}
+nav li a:active{
+    color: #002316;
+}
+
+/* Main */
+main{
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 20px;
+}
+h1{
+    font-family: 'rouge_scriptregular';
+    font-size: 3em;
+    margin: 0px;
+}
+#text{
+   /* Nothing */
+}
+#img{
+    /* Nothing */
+}
+img{
+    padding-right: 10px;
+    transition: transform 1s;
+}
+img:hover{
+    transform: scale(1.05);
+}
+/* Footer */
+footer{
+    text-align: right;
+    font-style: italic;
+    border: 1px solid black;
+    border-top: 0px;
+    background-color: #b06248;
+    padding: 0px 30px 15px 0px;
+} 
+
+/* Links */
+a:link{
+    color: blue;
+}
+a:visited{
+    color: blue;
+}

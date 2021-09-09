@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Music of the Month Club</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assignment7.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <!-- Seth Kerrey
+	   assignment7.html
+	   INFO 1316
+	   Olberding
+	   1/24/2021
+	-->
+</head>
+    <body>
+        <header>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Member Login</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="nav_color"><a href="#">Music</a></li>
+                <li class="nav_color"><a href="#">Member Sign Up</a></li>
+                <li class="nav_color"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Member Form</h1>
+            <form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+                
+                <!-- General Info -->
+                <table>
+                    <tr>
+                        <td>
+                            <label for="firstname">First Name <span style="color: red;">*</span></label>
+                        </td>
+                        <td>
+                            <input name="FirstName" type="text" id="firstname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lastname">Last Name <span style="color: red;">*</span></label>
+                        </td>
+                        <td>
+                            <input name="LastName" type="text" id="lastname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email <span style="color: red;">*</span></label>
+                        </td>
+                        <td>
+                            <input name="Email" type="text" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone Number</label>
+                        </td>
+                        <td>
+                            <input name="Phone Number" type="text" id="phone">
+                        </td>
+                </table>
+                
+                <!-- Address -->
+                <table>
+                    <tr>
+                        <td>
+                            <label for="address1">Street Address</label>
+                        </td>
+                        <td>
+                            <input name="Street Address" type="text" id="address1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address2">Apartment/Suite #</label>
+                        </td>
+                        <td>
+                            <input name="Apartment/Suite #" type="text" id="address2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label>
+                        </td>
+                        <td>
+                            <input name="City" type="text" id="city">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">State</label>
+                        </td>
+                        <td>
+                            <input name="State" type="text" id="state">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="zip">Zip</label>
+                        </td>
+                        <td>
+                            <input name="Zip" type="text" id="zip">
+                        </td>
+                </table>
+                
+                <br>
+                <!-- Type of Music -->
+                <fieldset name="type" id="type"><legend>Select Your Favorite Type(s) of Music</legend>
+                    <input type="checkbox" id="pop" name="Favorite type of music" value="pop">
+                    <label for="pop"> Pop </label><br>
+                    <input type="checkbox" id="classical" name="Favorite type of music" value="classical">
+                    <label for="classical"> Classical </label><br>
+                    <input type="checkbox" id="rock" name="Favorite type of music" value="rock">
+                    <label for="rock"> Rock </label><br>
+                    <input type="checkbox" id="folk" name="Favorite type of music" value="folk">
+                    <label for="folk"> Folk </label><br>
+                    <input type="checkbox" id="rap" name="Favorite type of music" value="rap">
+                    <label for="rap"> Rap </label><br>
+                    <input type="checkbox" id="other" name="Favorite type of music" value="other">
+                    <label for="other"> Other </label><br>
+                </fieldset>
+                <br>
+                
+                <!-- Monthly Discounts -->
+                <fieldset name="discount" id="discount">
+                    <legend>
+                        Would you like to receive our monthly deals and discounts email?
+                    </legend>
+                    <input name="Recieve monthly deals and discount emails" type="radio" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                            <br>
+                    <input name="Recieve monthly deals and discount emails" type="radio" id="no" value="no">
+                        <label for="no">No</label>
+                            <br>
+                </fieldset>
+                <br>
+                <div style="padding-left: 5px;"><span style="color: red;">*</span> = required</div>
+                <br>
+                
+                <!-- Input -->
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Clear Form" id="reset">
+                
+                <!-- CGI Script -->
+                <input name="required" type="hidden" value="FirstName,LastName,Email">
+                <input name="redirect" type="hidden" value="http://student.mccinfo.net/~sjkerrey/info1316/module7/return_page.html">
+                <input type="hidden" name="subject" value="INFO1316-WW Form Assignment">
+                <input name="Recipient" type="hidden" value="sethkerrey@gmail.com">
+                
+            </form>
+        </main>
+        <footer>
+            Created by <a href="mailto:sjkerrey@mail.mccneb.edu">&copy; Seth Kerrey</a>
+        </footer>  
+    </body>
+</html>
