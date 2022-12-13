@@ -1,100 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- add icon here -->
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>Seth Kerrey</title>
+<title>Card Effect</title>
+<link rel="stylesheet" href="style.css">
+<!-- 
+  Code by quangdao from codepen.com 
+  Adapted by Seth Kerrey 12/13/2022
+-->
 </head>
 <body>
-    <header>
-        header
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Bio</a>
-            <a href="#">Resume</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </div>
-    </header>
-    <main>
-        <div class="bio">
-            <h1>
-                Bio
-            </h1>
-            <p>
-                Seth Kerrey recently graduated Metropolitan Community College (MCC) with an Associate Degree in Front-End Web Development. His work at MCC reflects the hard work and dedication he has for learning web development as he graduated with academic honors, a member of Phi Theta Kappa, a recipient of the Peter Kiewit Foundation Vocational Scholarship, and made it onto MCC’s Dean’s List.
-            </p>
-            <p>
-                Currently studying at Bellevue University, Seth is projected to graduate in February 2023 with a Bachelor of Science in Web Design. His goal is to find sustainable employment within his career field while still in college. Seth’s resume can be found here.
-            </p>
-            <p>
-                Seth specializes in HTML5, CSS3, JavaScript and has worked with coding languages like XML, MySQL, and PHP. Seth is also learning to use frameworks like React and Angular to further his knowledge of web development.
-            </p>
-            <p>
-                When Seth is not studying he engages in activities with friends and family. Some days he will exercise, go on walks, or spend time planning and organizing events for family get-togethers. Other areas of interest for Seth are video games, sand volleyball, and reading.
-            </p>
-        </div>
-        <div class="resume">
-            <h1>
-                Resume
-            </h1>
-            <p>
-                Work Experiences:
-                <br>
-                Web & Graphic Designer - 2021 - Current
-                <br>
-                Advertising Specialist - 2018 to 2020
-                <br>
-                Data Technician - 2016 to 2016
-            </p>
-            <table class="table table-hover">
-                <tr>
-                    <th>Skills</th>
-                </tr>
-                <tr>
-                    <td class="bg-info">HTML5</td>
-                    <td>WordPress</td>
-                    <td>Website Optimization</td>
-                </tr>
-                <tr>
-                    <td>CSS3</td>
-                    <td>Bootstrap</td>
-                    <td>UX/UI Architecture</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>jQuery</td>
-                    <td>Unique Content Creation</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>GitHub</td>
-                    <td>Team Contribution</td>
-                </tr>
-            </table>
-            <h1>
-                Projects
-            </h1>
-            <ul class="list-group" style="list-style-type: none;">
-                <li><a href="projects/keyboard/index.html" class="list-group-item list-group-item-action">Keyboard</a></li>
-                <li><a href="https://sjkerrey.portfolios.mccinfo.net/thelandne/">Back to the Land</a></li>
-                <li><a href="projects/pipedownrecords/home.html">Pipe Down Records</a></li>
-                <li><a href="projects/contactform/contact.html">Contact Form</a></li>
-                <li><a href="projects/gardenpros/gardenpros.html">Garden Pros</a></li>
-                <li><a href="projects/downtowndiner/final.html">Downtown Diner</a></li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <h1>
-            Footer
-        </h1>
-        <p><em>Copyright © 2021 </em>Seth Kerrey</p>
-    </footer>
+
+  <div class="container">
+
+     <div class="card">
+       <div class="face face1">
+         <div class="content">
+            <img src="sk-website.png" alt="website-logo-white">            
+           <h3>Portfolio</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <a href="https://sethkerrey.com/" type="button">View Site</a>
+         </div>
+       </div>
+    </div>
+    
+    <div class="card">
+       <div class="face face1">
+         <div class="content">
+          <img src="sk-school.png" alt="school-logo-white">
+            <h3>School Projects</h3>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="content">
+           <a href="https://skerrey.github.io/portfolio/" type="button">View Site</a>
+         </div>
+       </div>
+    </div>
+
+  </div>
+  
 </body>
 </html>
